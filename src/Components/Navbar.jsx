@@ -1,13 +1,14 @@
 import CartWidget from "./CartWidget";
 import UserWidget from "./UserWidget";
 import "./Style.css"
+import { Link } from "react-router-dom";
 
 const Menu = ()=> {
     return(
         <nav class="navbar navbar-expand-lg navbar-light TextForm">
   <div class="container-fluid">
   <div class="Icon"></div>
-    <a class="navbar-brand" href="/">FDG-UnderClothes</a>
+    <Link to="/"><a class="navbar-brand" href="/">FDG-UnderClothes</a></Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

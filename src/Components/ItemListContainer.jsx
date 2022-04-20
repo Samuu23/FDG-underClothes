@@ -7,12 +7,14 @@ const ItemListContainer = ()=> {
     const [products, setProducts] = useState ([])
 
     useEffect(()=>{
-        async function productsData(){
-            let dataProducts = await getData();
-            setProducts(dataProducts)
-        }
-        productsData();
+            async function productsData(){
+                let dataProducts = await getData();
+                setProducts(dataProducts)
+            }
+            productsData();
+        
     }, [])
+
     
     return(
         <>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { GetDataDetail } from "../utils/products";
 import ItemDetail from "./ItemDetail";
 
-const ItemDetailContainer= (DetailItems)=> {
+const ItemDetailContainer= ()=> {
 
 const [ProdDetail, useProduDetail] = useState([]);
 
