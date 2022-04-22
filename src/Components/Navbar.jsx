@@ -15,7 +15,7 @@ const Menu = ()=> {
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Calzado</a>
+          <Link to="/category/Calzado"><a class="nav-link" aria-current="page" href="/">Calzado</a></Link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/">Indumentaria</a>

@@ -9,7 +9,7 @@ const data=[
         priceUSD:240,
         stock: 5,
         DetailImage: ["../DetailImg/1-NIKE AIR MAX 1 PURE PLATINUM RACER BLUE.jpg"],
-        imageProduct: ["./ItemsImg/1-NIKE AIR MAX 1 PURE PLATINUM RACER BLUE.jpg"] 
+        imageProduct: ["../ItemsImg/1-NIKE AIR MAX 1 PURE PLATINUM RACER BLUE.jpg"] 
     },
     {
         id:2,
@@ -21,7 +21,7 @@ const data=[
         priceUSD: 180,
         stock: 5,
         DetailImage: ["../DetailImg/2-NIKE AIR MAX 1 DYNAMIC BERRY.jpg"], 
-        imageProduct: ["./ItemsImg/2-NIKE AIR MAX 1 DYNAMIC BERRY.jpg"]
+        imageProduct: ["../ItemsImg/2-NIKE AIR MAX 1 DYNAMIC BERRY.jpg"]
     },
     {
         id:3,
@@ -33,7 +33,7 @@ const data=[
         priceUSD: 210,
         stock: 5,
         DetailImage: ["../DetailImg/3-NIKE DUNK HIGH 1985 RED ACID WASH.jpg"], 
-        imageProduct: ["./ItemsImg/3-NIKE DUNK HIGH 1985 RED ACID WASH.jpg"] 
+        imageProduct: ["../ItemsImg/3-NIKE DUNK HIGH 1985 RED ACID WASH.jpg"] 
     },
     {
         id:4,
@@ -45,7 +45,7 @@ const data=[
         priceUSD: 170,
         stock: 5,
         DetailImage: ["../DetailImg/4-NIKE DUNK HIGH SB TRUCK IT BLACK.jpg"],  
-        imageProduct: ["./ItemsImg/4-NIKE DUNK HIGH SB TRUCK IT BLACK.jpg"]
+        imageProduct: ["../ItemsImg/4-NIKE DUNK HIGH SB TRUCK IT BLACK.jpg"]
     },
     {
         id:5,
@@ -57,7 +57,7 @@ const data=[
         priceUSD: 215,
         stock: 5, 
         DetailImage: ["../DetailImg/5-NIKE DUNK LOW EMB NBA 75TH ANNIVERSARY CHICAGO.jpg"], 
-        imageProduct: ["./ItemsImg/5-NIKE DUNK LOW EMB NBA 75TH ANNIVERSARY CHICAGO.jpg"]
+        imageProduct: ["../ItemsImg/5-NIKE DUNK LOW EMB NBA 75TH ANNIVERSARY CHICAGO.jpg"]
     },
     {
         id:6,
@@ -69,7 +69,7 @@ const data=[
         priceUSD: 265,
         stock: 5, 
         DetailImage: ["../DetailImg/6-NIKE DUNK LOW REVERSE PAPA BEAR.jpg"], 
-        imageProduct: ["./ItemsImg/6-NIKE DUNK LOW REVERSE PAPA BEAR.jpg"]
+        imageProduct: ["../ItemsImg/6-NIKE DUNK LOW REVERSE PAPA BEAR.jpg"]
     },
     {
         id:7,
@@ -81,7 +81,7 @@ const data=[
         priceUSD: 1550,
         stock: 5, 
         DetailImage: ["../DetailImg/7-NIKE DUNK LOW SB CHUNKY DUNKY.jpg"], 
-        imageProduct: ["./ItemsImg/7-NIKE DUNK LOW SB CHUNKY DUNKY.jpg"]
+        imageProduct: ["../ItemsImg/7-NIKE DUNK LOW SB CHUNKY DUNKY.jpg"]
     },
     {
         id:8,
@@ -93,7 +93,7 @@ const data=[
         priceUSD: 770,
         stock: 5, 
         DetailImage: ["../DetailImg/8-NIKE DUNK LOW SB SEAN CLIVER.jpg"], 
-        imageProduct: ["./ItemsImg/8-NIKE DUNK LOW SB SEAN CLIVER.jpg"]
+        imageProduct: ["../ItemsImg/8-NIKE DUNK LOW SB SEAN CLIVER.jpg"]
     },
     {
         id:9,
@@ -105,7 +105,7 @@ const data=[
         priceUSD:300,
         stock:5, 
         DetailImage: ["../DetailImg/9-NIKE DUNK LOW SIEMPRE FAMILIA.jpg"], 
-        imageProduct: ["./ItemsImg/9-NIKE DUNK LOW SIEMPRE FAMILIA.jpg"]
+        imageProduct: ["../ItemsImg/9-NIKE DUNK LOW SIEMPRE FAMILIA.jpg"]
     },
     {
         id:10,
@@ -117,7 +117,7 @@ const data=[
         priceUSD:225,
         stock: 5, 
         DetailImage: ["../DetailImg/10-NIKE KYRIE FLYTRAP UNIVERSITY RED.jpg"], 
-        imageProduct: ["./ItemsImg/10-NIKE KYRIE FLYTRAP UNIVERSITY RED.jpg"]
+        imageProduct: ["../ItemsImg/10-NIKE KYRIE FLYTRAP UNIVERSITY RED.jpg"]
     },
     {
         id:11,
@@ -129,7 +129,7 @@ const data=[
         priceUSD:175,
         stock: 5,
         DetailImage: ["../DetailImg/11-NIKE SB DUNK LOW PRO ACG TERRA RED PLUM.jpg"], 
-        imageProduct: ["./ItemsImg/11-NIKE SB DUNK LOW PRO ACG TERRA RED PLUM.jpg"]
+        imageProduct: ["../ItemsImg/11-NIKE SB DUNK LOW PRO ACG TERRA RED PLUM.jpg"]
     },
     {
         id:12,
@@ -141,7 +141,7 @@ const data=[
         priceUSD:830,
         stock: 5,
         DetailImage: ["../DetailImg/12-NIKE SB DUNK LOW GRATEFUL DEAD BEARS OPTI YELLOW.jpg"], 
-        imageProduct: ["./ItemsImg/12-NIKE SB DUNK LOW GRATEFUL DEAD BEARS OPTI YELLOW.jpg"]
+        imageProduct: ["../ItemsImg/12-NIKE SB DUNK LOW GRATEFUL DEAD BEARS OPTI YELLOW.jpg"]
     },
     {
         id:13,
@@ -153,7 +153,7 @@ const data=[
         priceUSD:300,
         stock: 5,
         DetailImage: ["../DetailImg/13-NIKE SB DUNK LOW ATMOSPHERE.jpg"],  
-        imageProduct: ["./ItemsImg/13-NIKE SB DUNK LOW ATMOSPHERE.jpg"]
+        imageProduct: ["../ItemsImg/13-NIKE SB DUNK LOW ATMOSPHERE.jpg"]
     },
     {
         id:14,
@@ -165,7 +165,7 @@ const data=[
         priceUSD:300,
         stock: 5,
         DetailImage: ["../DetailImg/14-AIR JORDAN 1 HIGH LIGHT SMOKE GREY.jpg"], 
-        imageProduct: ["./ItemsImg/14-AIR JORDAN 1 HIGH LIGHT SMOKE GREY.jpg"]
+        imageProduct: ["../ItemsImg/14-AIR JORDAN 1 HIGH LIGHT SMOKE GREY.jpg"]
     },
     {
         id:15,

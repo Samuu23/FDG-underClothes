@@ -3,20 +3,21 @@ import { ItemDetailDiv, DetailPhotoDiv, ItemDetailInfoDiv, DetailH2, DetailSubti
 import { Button } from "@mui/material";
 
 
-const ItemDetail=({DetailItems})=>{
+const ItemDetail=({items})=>{
 
     return(
-        <ItemDetailDiv key={DetailItems.id}>
+
+        <ItemDetailDiv>
         <div className="container d-flex justify-content-center align-items-center">
                 <div className="container-fluid d-flex justify-content-center align-items-center">
-                <DetailPhotoDiv src={DetailItems.DetailImage}/>
+                <DetailPhotoDiv src={items.DetailImage}/>
                 <ItemDetailInfoDiv>
-                    <DetailH2>{DetailItems.itemName}</DetailH2>
-                    <DetailSubtittle>{DetailItems.subName}</DetailSubtittle>
-                    <DetailBrand>Marca: {DetailItems.brand}</DetailBrand>
-                    <DetailStock>Stock: {DetailItems.stock}</DetailStock>
-                    <DetailPrice>$ {DetailItems.price}</DetailPrice>
-                    <DetailPriceUSD>{DetailItems.priceUSD} USD</DetailPriceUSD>
+                    <DetailH2>{items.itemName}</DetailH2>
+                    <DetailSubtittle>{items.subName}</DetailSubtittle>
+                    <DetailBrand>Marca: {items.brand}</DetailBrand>
+                    <DetailStock>Stock: {items.stock}</DetailStock>
+                    <DetailPrice>$ {items.price}</DetailPrice>
+                    <DetailPriceUSD>{items.priceUSD} USD</DetailPriceUSD>
                     <div className="container d-flex justify-content-center align-items-center m-4">
                     <Button variant="contained" color="success" size="large">Comprar</Button>
                     </div>

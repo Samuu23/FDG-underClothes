@@ -1,23 +1,30 @@
 import { useEffect, useState } from "react"
-import { GetDataDetail } from "../utils/products";
+import { useParams } from "react-router-dom";
+import { getData } from "../utils/products";
 import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer= ()=> {
 
-const [ProdDetail, useProduDetail] = useState([]);
+const [prodDetail, setProdDetail] = useState ({})
 
-useEffect(()=>{
-    async function DataDetail(){
-        let dataProductsDetail= await GetDataDetail()
-        useProduDetail(dataProductsDetail) 
+const {ItemId}=useParams();
+    
+    useEffect(()=>{
+    if(ItemId===undefined){
+        console.log("error")
+    }else{
+        async function DataDetail(){
+            let dataProductsDetail= await getData();
+            let dataDetailFind= dataProductsDetail.find(item => item.id === parseInt(ItemId));
+            setProdDetail(dataDetailFind);
+        }
+        DataDetail()
     }
-    DataDetail()
-}, [])
-
+}, [ItemId])
 
 return(
     <>
-    <ItemDetail DetailItems={ProdDetail}/>
+    <ItemDetail items={prodDetail}/>
     </>
 );
 

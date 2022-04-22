@@ -3,7 +3,6 @@ import { ProductsContainer } from "./ProductsStyle";
 
 
 const ItemList=({items})=> {
- console.log(items)
  return(
      <>
         <ProductsContainer>
