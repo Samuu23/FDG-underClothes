@@ -1,12 +1,19 @@
-import ItemCount from "./ItemCount";
+ import ItemCount from "./ItemCount";
 import { ItemDetailDiv, DetailPhotoDiv, ItemDetailInfoDiv, DetailH2, DetailSubtittle, DetailStock, DetailBrand, DetailPrice, DetailPriceUSD} from "./ProductsStyle";
 import { Button } from "@mui/material";
+import { useState } from "react";
+ import ItemCheckout from "./ItemCheckout"
 
 
 const ItemDetail=({items})=>{
+    const [itemCount, setItemCount]= useState(0)
 
+    const onAdd= (qty)=>{
+        alert("agregaste "+ qty +" producto/s")
+        setItemCount(qty)
+        console.log(qty)
+    }
     return(
-
         <ItemDetailDiv>
         <div className="container d-flex justify-content-center align-items-center">
                 <div className="container-fluid d-flex justify-content-center align-items-center">
@@ -22,7 +29,11 @@ const ItemDetail=({items})=>{
                     <Button variant="contained" color="success" size="large">Comprar</Button>
                     </div>
                     <div className="container-fluid d-flex justify-content-center align-items-center m-4">
-                    <ItemCount/>
+                        {
+                         itemCount===0
+                         ? <ItemCount  stock={items.stock} initial={itemCount} onAdd={onAdd}/>
+                         : <ItemCheckout/>
+                        }
                     </div>
                 </ItemDetailInfoDiv>
                 </div>
