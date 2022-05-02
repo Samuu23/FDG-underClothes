@@ -164,6 +164,104 @@ font-size: 17px;
 font-weight: 700;
 font-family: 'Poppins', sans-serif;
 `
+
+//Cart
+const CartContainer= styled.div`
+width: 250vh;
+height: 100%;
+background-color: white;
+display: flex;
+`
+//Cart / Item Cart Container
+const ItemCartContainer= styled.div`
+width: 150vh;
+height: 100%;
+background-color: white;
+border-radius: 30px 0px 0px 30px;
+border: 1px solid #E8E8E8;`
+
+const ItemCartHeaderDiv= styled.div`
+width: 100%;
+height: 80px;`
+
+const ItemCartMainDiv= styled.div`
+width: 100%;
+height: 120px;
+border-top: 1px solid #E8E8E8`
+
+const ItemCartTittle= styled.h1`
+font-size: 35px;`
+
+const ItemCartAmount= styled.h2`
+font-size: 20px`
+
+const ItemCartImage= styled.img`
+width: 150px;`
+
+const ItemCartName= styled.h2`
+font-size: 15px;`
+
+const ItemCartType= styled.p``
+
+const ItemCartUnit= styled.p``
+
+const ItemCartPrice= styled.h1`
+font-size: 20px`
+
+
+//Cart /Info Cart
+
+const InfoCartContainer= styled.div`
+width:50vh;
+height: 50vh;
+background-color: #00c853;
+border-radius: 0px 30px 30px 0px;
+border: 1px solid #E8E8E8;`
+
+const InfoCartHeaderDiv= styled.div`
+width: 100%;
+height: 80px;
+border-bottom: 1px solid #E8E8E8`
+
+const InfoCartTittle= styled.h2`
+font-size: 27px;
+color: white;`
+
+const InfoCartMainDiv= styled.div`
+border-bottom: 1px solid #E8E8E8`
+
+const InfoCartItems= styled.h2`
+font-size: 23px;
+color: white;`
+
+const InfoCartTotalPrice= styled.h2`
+font-size: 20px;
+color: white;`
+
+const InfoCartTotalPriceValue= styled.h2`
+font-size: 20px;
+color: white;`
+
+const InfoCartItemsPrice= styled.p`
+font-size: 17px;
+color: white;`
+
+const InfoCartItemsValue= styled.p`
+font-size: 17px;
+color: white;`
+
+
+const InfoCartTax= styled.p`
+font-size: 17px;
+color: white;`
+
+const InfoCartTaxValue= styled.p`
+font-size: 17px;
+color: white;`
+
+
+
+
 export {
-    ProductCard, NikeLogo, Image, Info, TittlePS, PricePS, PriceUSDPS, SubTittlePS, PSHover, ProductsContainer, ItemDetailDiv, DetailPhotoDiv, ItemDetailInfoDiv, DetailH2, DetailSubtittle, DetailStock, DetailBrand, DetailPrice, DetailPriceUSD  
+    ProductCard, NikeLogo, Image, Info, TittlePS, PricePS, PriceUSDPS, SubTittlePS, PSHover, ProductsContainer, ItemDetailDiv, DetailPhotoDiv, ItemDetailInfoDiv, DetailH2, DetailSubtittle, DetailStock, DetailBrand, DetailPrice, DetailPriceUSD, CartContainer, ItemCartContainer, InfoCartContainer, ItemCartTittle, ItemCartImage,ItemCartName, ItemCartType, ItemCartUnit, ItemCartPrice, ItemCartAmount, ItemCartHeaderDiv, ItemCartMainDiv, InfoCartHeaderDiv, InfoCartTittle, InfoCartMainDiv, InfoCartItems, InfoCartTotalPrice, InfoCartTax, InfoCartTaxValue, InfoCartTotalPriceValue,InfoCartItemsPrice, InfoCartItemsValue
 }

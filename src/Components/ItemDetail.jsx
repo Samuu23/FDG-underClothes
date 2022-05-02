@@ -1,17 +1,20 @@
  import ItemCount from "./ItemCount";
 import { ItemDetailDiv, DetailPhotoDiv, ItemDetailInfoDiv, DetailH2, DetailSubtittle, DetailStock, DetailBrand, DetailPrice, DetailPriceUSD} from "./ProductsStyle";
 import { Button } from "@mui/material";
-import { useState } from "react";
+import { useContext, useState } from "react";
  import ItemCheckout from "./ItemCheckout"
+import { CartContext } from "./CartContext";
 
 
 const ItemDetail=({items})=>{
     const [itemCount, setItemCount]= useState(0)
 
+    const test= useContext(CartContext)
+
     const onAdd= (qty)=>{
         alert("agregaste "+ qty +" producto/s")
         setItemCount(qty)
-        console.log(qty)
+        test.addToCart(items)
     }
     return(
         <ItemDetailDiv>

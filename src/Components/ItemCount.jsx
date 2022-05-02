@@ -25,6 +25,8 @@ const ItemCount= ({stock=0, initial=1, onAdd})=>{
         }
     }
 
+    console.log(rate)
+
     return(
         <div>
             <ButtonGroup variant="contained" aria-label="outlined primary button group">

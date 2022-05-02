@@ -29,7 +29,7 @@ const Menu = ()=> {
         <button className="btn IconBottonNavbarUser" type="button"></button>       
     </div>
     <UserWidget></UserWidget>
-    <CartWidget></CartWidget>
+    <Link to="/Cart"><CartWidget></CartWidget></Link>
   </div>
 </nav>
     );
