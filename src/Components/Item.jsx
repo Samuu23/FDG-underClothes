@@ -24,7 +24,7 @@ const Item=({ id, itemName, subName, price, priceUSD, imageProduct }) => {
              </div>
              <div>
                  <PSHover>
-                     <Link to={`/Item/${id}`}><Button variant="contained" color="success">Detalles</Button></Link>
+                     <Link to={`/Item/${id}`} style={{textDecoration: "none"}}><Button variant="contained" color="success">Detalles</Button></Link>
                  </PSHover>
              </div>
          </ProductCard>

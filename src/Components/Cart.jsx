@@ -5,7 +5,6 @@ import { CartContainer, InfoCartContainer, ItemCartContainer, ItemCartTittle, It
 const Cart = ()=>{
 const test= useContext(CartContext)
 
-console.log(test)
     return(
         <div className="container d-flex justify-content-center align-items-center">
             {
@@ -14,7 +13,7 @@ console.log(test)
                         <ItemCartContainer>
                         <ItemCartHeaderDiv>
                             <div className=" d-flex justify-content-between align-items-center p-3">
-                            <ItemCartTittle>Shopping Cart</ItemCartTittle>
+                            <ItemCartTittle>Carro De Compra</ItemCartTittle>
                         <ItemCartAmount>Items</ItemCartAmount>
                             </div>
                         </ItemCartHeaderDiv>
@@ -22,20 +21,19 @@ console.log(test)
                             test.cartList.map(item=>
                                 <ItemCartMainDiv>
                             <div className="d-flex justify-content-between align-items-center p-3">
-                                <ItemCartImage src={item.DetailImage}/>
+                                <ItemCartImage src={item.imageItem}/>
                                 <div className="d-block">
-                                <ItemCartType>Calzado</ItemCartType>    
-                                <ItemCartName>{item.itemName} {item.subName}</ItemCartName>
+                                <ItemCartType>{item.categoryItem}</ItemCartType>    
+                                <ItemCartName>{item.nameItem} {item.snameItem}</ItemCartName>
                                 </div>
-                                <ItemCartUnit>3 unidad/es</ItemCartUnit>
+                                <ItemCartUnit>{item.SelectedItem} unidad/es</ItemCartUnit>
                                 <div className="d-block">
-                                <ItemCartPrice>${item.price}</ItemCartPrice>
-                                <ItemCartPrice>{item.priceUSD} USD</ItemCartPrice>
+                                <ItemCartPrice>$ {item.priceItem} C/U</ItemCartPrice>
+                                <ItemCartPrice>{item.priceusdItem} USD</ItemCartPrice>
                                 </div>
                             </div>
                         </ItemCartMainDiv>)
-                        }
-                        
+                        }                       
                 </ItemCartContainer>
                 <InfoCartContainer>
                     <InfoCartHeaderDiv>
@@ -45,21 +43,25 @@ console.log(test)
                     </InfoCartHeaderDiv>
                     <InfoCartMainDiv>
                         <div className="p-2 d-flex justify-content-end">
-                        <InfoCartItems>3 Item/s</InfoCartItems>
+                        <InfoCartItems> {test.CalcTotalItems()} Item/s</InfoCartItems>
                         </div>
                         <div className="p-2 d-flex justify-content-between">
                         <InfoCartItemsPrice>Productos</InfoCartItemsPrice>
-                            <InfoCartItemsValue>$3000</InfoCartItemsValue>
+                            <InfoCartItemsValue>$ {test.CalcSubTotal()}</InfoCartItemsValue>
                         </div>
                         <div className="p-2 d-flex justify-content-between">
                             <InfoCartTax>Impuestos</InfoCartTax>
-                            <InfoCartTaxValue>$300</InfoCartTaxValue>
+                            <InfoCartTaxValue>$ {test.CalcTax()}</InfoCartTaxValue>
                         </div>
                     </InfoCartMainDiv>
                     <div className="p-2 d-flex justify-content-between">
                             <InfoCartTotalPrice>TOTAL</InfoCartTotalPrice>
-                            <InfoCartTotalPriceValue>$5000</InfoCartTotalPriceValue>
-                        </div>
+                            <InfoCartTotalPriceValue>$ {test.CalcTotal()}</InfoCartTotalPriceValue>
+                            </div>
+                    <div className="p-2 d-flex justify-content-end">
+                    <InfoCartTotalPriceValue> {test.CalcTotalUSD()} USD</InfoCartTotalPriceValue>
+                    </div>
+
                 </InfoCartContainer>
                     </CartContainer>
                 )

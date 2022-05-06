@@ -11,10 +11,12 @@ const ItemDetail=({items})=>{
 
     const test= useContext(CartContext)
 
+    
+
     const onAdd= (qty)=>{
         alert("agregaste "+ qty +" producto/s")
         setItemCount(qty)
-        test.addToCart(items)
+        test.addToCart(items, qty)
     }
     return(
         <ItemDetailDiv>
