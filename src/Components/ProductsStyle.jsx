@@ -13,7 +13,7 @@ justify-content: space-between;
 const PSHover = styled.div`
 background-color: rgba(0, 0, 0, 0.5);
 width: 45vh;
-height: 65vh;
+height: 68vh;
 position: absolute;
 top: 0;
 border-radius: 5%;
@@ -27,7 +27,7 @@ transition: all 0.5s ease;
 
 const ProductCard = styled.div`
 width: 45vh;
-height: 65vh;
+height: 68vh;
 box-shadow: 0px 3px 4px rgba(63, 63, 63, 0.479);
 border-radius: 5%;
 margin: 5px;
@@ -37,7 +37,7 @@ z-index: 2;
     opacity: 1;
 }
 `
-const NikeLogo = styled.img`
+const BranchLogo = styled.img`
 width: 60px;
 height: 60px;
 `
@@ -45,7 +45,6 @@ const Image = styled.img`
 margin-top: 20px;
 width: 200px;
 height: 100px;
-transform: rotate(18deg);
 `
 const Info = styled.div`
 margin-top: 30px;
@@ -263,5 +262,5 @@ color: white;`
 
 
 export {
-    ProductCard, NikeLogo, Image, Info, TittlePS, PricePS, PriceUSDPS, SubTittlePS, PSHover, ProductsContainer, ItemDetailDiv, DetailPhotoDiv, ItemDetailInfoDiv, DetailH2, DetailSubtittle, DetailStock, DetailBrand, DetailPrice, DetailPriceUSD, CartContainer, ItemCartContainer, InfoCartContainer, ItemCartTittle, ItemCartImage,ItemCartName, ItemCartType, ItemCartUnit, ItemCartPrice, ItemCartAmount, ItemCartHeaderDiv, ItemCartMainDiv, InfoCartHeaderDiv, InfoCartTittle, InfoCartMainDiv, InfoCartItems, InfoCartTotalPrice, InfoCartTax, InfoCartTaxValue, InfoCartTotalPriceValue,InfoCartItemsPrice, InfoCartItemsValue
+    ProductCard, BranchLogo, Image, Info, TittlePS, PricePS, PriceUSDPS, SubTittlePS, PSHover, ProductsContainer, ItemDetailDiv, DetailPhotoDiv, ItemDetailInfoDiv, DetailH2, DetailSubtittle, DetailStock, DetailBrand, DetailPrice, DetailPriceUSD, CartContainer, ItemCartContainer, InfoCartContainer, ItemCartTittle, ItemCartImage,ItemCartName, ItemCartType, ItemCartUnit, ItemCartPrice, ItemCartAmount, ItemCartHeaderDiv, ItemCartMainDiv, InfoCartHeaderDiv, InfoCartTittle, InfoCartMainDiv, InfoCartItems, InfoCartTotalPrice, InfoCartTax, InfoCartTaxValue, InfoCartTotalPriceValue,InfoCartItemsPrice, InfoCartItemsValue
 }

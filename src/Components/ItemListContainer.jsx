@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getData } from "../utils/products";
+import { collection, getDocs } from "firebase/firestore";
+import db from "../utils/FireBaseConfig";
 import ItemList from "./ItemList";
 
 const ItemListContainer = ()=> {
@@ -10,20 +11,26 @@ const ItemListContainer = ()=> {
     const {nameCategory}=useParams();
 
     useEffect(()=>{
-        if(nameCategory===undefined){
-            async function productsData(){
-                let dataProducts= await getData();
-                setProducts(dataProducts)
-            }
-            productsData()
-        }else{
-            async function productsDataFil(){
-                let dataProductsFil = await getData();
-                let dataFilter= dataProductsFil.filter(item => item.category === nameCategory)
-                setProducts(dataFilter);
-            }
-            productsDataFil();
-        }       
+        const fetchFireStore= async ()=>{
+            const querySnapshot = await getDocs(collection(db, "products"));
+            const dataFireStore=querySnapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data()
+            }));
+            const Filter= dataFireStore.filter(item => item.category === nameCategory)
+           if(nameCategory===undefined){
+               return dataFireStore
+           }else{
+               return Filter
+           }
+
+        }
+
+
+
+        fetchFireStore()
+        .then(result=> setProducts(result))
+        .catch(err => console.log(err))     
     }, [nameCategory])
     return(
         <>

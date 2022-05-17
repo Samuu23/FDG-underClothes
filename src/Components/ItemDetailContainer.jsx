@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
-import { getData } from "../utils/products";
+import { collection, getDocs } from "firebase/firestore";
+import db from "../utils/FireBaseConfig";
 import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer= ()=> {
@@ -10,16 +11,22 @@ const [prodDetail, setProdDetail] = useState ({})
 const {ItemId}=useParams();
     
     useEffect(()=>{
-    if(ItemId===undefined){
-        console.log("error")
-    }else{
-        async function DataDetail(){
-            let dataProductsDetail= await getData();
-            let dataDetailFind= dataProductsDetail.find(item => item.id === parseInt(ItemId));
-            setProdDetail(dataDetailFind);
+        const fetchFireStore= async ()=>{
+            const querySnapshot = await getDocs(collection(db, "products"));
+            const dataFireStore=querySnapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data()
+            }));
+            const dataFind= dataFireStore.find(item => item.id===parseInt(ItemId))
+            console.log(dataFind)
+            return dataFind
         }
-        DataDetail()
-    }
+
+
+
+    fetchFireStore()
+    .then(result=> setProdDetail(result))
+    .catch(err => console.log(err))     
 }, [ItemId])
 
 return(

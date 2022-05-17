@@ -18,10 +18,10 @@ const Menu = ()=> {
           <Link to="/category/Calzado" style={{textDecoration: "none"}}><a class="nav-link" aria-current="page" href="/">Calzado</a></Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">Indumentaria</a>
+          <Link to="/category/Indumentaria" style={{textDecoration: "none"}}><a class="nav-link" href="/">Indumentaria</a></Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">Accesorios</a>
+          <Link to="/category/Accesorios" style={{textDecoration: "none"}}><a class="nav-link" href="/">Accesorios</a></Link>
         </li>
       </ul>
     </div>
