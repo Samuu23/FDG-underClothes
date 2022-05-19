@@ -26,8 +26,6 @@ const ItemListContainer = ()=> {
 
         }
 
-
-
         fetchFireStore()
         .then(result=> setProducts(result))
         .catch(err => console.log(err))     

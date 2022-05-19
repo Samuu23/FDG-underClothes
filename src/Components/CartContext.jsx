@@ -31,6 +31,15 @@ const CartContextProvider= ({children})=>{
         }
     }
 
+        const DeleteItems=()=>{
+            setCartList([])
+        }
+
+        const DeleteItem=(idItem)=>{
+            let result= cartList.filter(items=> items.idItem !== idItem);
+            setCartList(result)
+        }
+
         const CalcTotalItem=(idItem)=>{
             let index= cartList.map(items=> items.idItem).indexOf(idItem);
             return cartList[index].priceItem * cartList[index].SelectedItem
@@ -83,6 +92,8 @@ const CartContextProvider= ({children})=>{
             CalcTotalUSD,
             CalcTotalItems,
             CalcTax,
+            DeleteItem,
+            DeleteItems,
             }}>
             {children}
         </CartContext.Provider>

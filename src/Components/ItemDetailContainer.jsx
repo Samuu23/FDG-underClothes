@@ -18,7 +18,6 @@ const {ItemId}=useParams();
             ...doc.data()
             }));
             const dataFind= dataFireStore.find(item => item.id===parseInt(ItemId))
-            console.log(dataFind)
             return dataFind
         }
 

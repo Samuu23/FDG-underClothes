@@ -13,7 +13,7 @@ justify-content: space-between;
 const PSHover = styled.div`
 background-color: rgba(0, 0, 0, 0.5);
 width: 45vh;
-height: 68vh;
+height: 64vh;
 position: absolute;
 top: 0;
 border-radius: 5%;
@@ -27,7 +27,7 @@ transition: all 0.5s ease;
 
 const ProductCard = styled.div`
 width: 45vh;
-height: 68vh;
+height: 64vh;
 box-shadow: 0px 3px 4px rgba(63, 63, 63, 0.479);
 border-radius: 5%;
 margin: 5px;
