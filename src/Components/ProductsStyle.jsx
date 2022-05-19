@@ -212,7 +212,7 @@ font-size: 20px`
 
 const InfoCartContainer= styled.div`
 width:50vh;
-height: 60vh;
+height: 67vh;
 background-color: #00c853;
 border-radius: 0px 30px 30px 0px;
 border: 1px solid #E8E8E8;`
